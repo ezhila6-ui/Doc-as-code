@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Sphinx Documentation",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/sphinx-build",
+      "args": [
+        "-b",
+        "html",
+        "${workspaceFolder}/docs",
+        "${workspaceFolder}/_build/html"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
